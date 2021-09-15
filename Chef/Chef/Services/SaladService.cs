@@ -22,6 +22,7 @@ namespace Chef.Services
         {
             _weightVegetableComparer = new WeightVegetableComparer();
             _caloriesVegetableComparer = new CaloriesVegetableComparer();
+            _vegetables = new Vegetable[0];
         }
 
         public int Calories
@@ -66,18 +67,12 @@ namespace Chef.Services
 
         public void SortVegetablesByWeight()
         {
-            if (_vegetables != null)
-            {
-                Array.Sort(_vegetables, _weightVegetableComparer);
-            }
+            Array.Sort(_vegetables, _weightVegetableComparer);
         }
 
         public void SortVegetablesByCalories()
         {
-            if (_vegetables != null)
-            {
-                Array.Sort(_vegetables, _caloriesVegetableComparer);
-            }
+            Array.Sort(_vegetables, _caloriesVegetableComparer);
         }
 
         public Vegetable[] GetVegetables()
