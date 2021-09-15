@@ -1,4 +1,6 @@
 ﻿using System;
+using Chef.Models.Vegetables;
+using Chef.Models.Vegetables.GroundVegetables;
 
 namespace Chef
 {
@@ -6,6 +8,8 @@ namespace Chef
     {
         public static void Main(string[] args)
         {
+            var starter = new Starter();
+            starter.Run();
         }
     }
 }
