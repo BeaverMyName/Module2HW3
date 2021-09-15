@@ -11,6 +11,10 @@ namespace Chef.Models.Vegetables
         public string Name { get; init; }
         public int Calories { get; init; }
         public double Weight { get; init; }
+        public bool IsHasSeeds { get; init; }
+        public VegetableType VegetableType { get; init; }
+        public GrowingDuration GrowingDuration { get; init; }
+        public StarchSpecification StarchSpecification { get; init; }
 
         public abstract object Clone();
     }

@@ -8,6 +8,11 @@ namespace Chef.Models.Vegetables.GroundVegetables
 {
     public class Broccoli : FlowerVegetable
     {
+        public Broccoli()
+        {
+            StarchSpecification = StarchSpecification.Green;
+        }
+
         public override object Clone()
         {
             return new Broccoli() { Name = Name, Calories = Calories, Weight = Weight };

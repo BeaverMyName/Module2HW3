@@ -8,5 +8,10 @@ namespace Chef.Models.Vegetables.GroundVegetables
 {
     public abstract class FlowerVegetable : GroundVegetable
     {
+        public FlowerVegetable()
+        {
+            VegetableType = VegetableType.Generative;
+            GrowingDuration = GrowingDuration.OneYear;
+        }
     }
 }

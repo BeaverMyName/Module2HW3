@@ -8,5 +8,9 @@ namespace Chef.Models.Vegetables.UndergroundVegetables
 {
     public abstract class UndergroundVegetable : Vegetable
     {
+        public UndergroundVegetable()
+        {
+            VegetableType = VegetableType.Vegetative;
+        }
     }
 }

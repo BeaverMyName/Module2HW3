@@ -8,9 +8,16 @@ namespace Chef.Models.Vegetables.GroundVegetables
 {
     public class Tomato : FruitVegetable
     {
+        public Tomato()
+        {
+            StarchSpecification = StarchSpecification.Green;
+        }
+
+        public TomatoType TomatoType { get; init; }
+
         public override object Clone()
         {
-            return new Tomato() { Name = Name, Calories = Calories, Weight = Weight };
+            return new Tomato() { Name = Name, Calories = Calories, Weight = Weight, TomatoType = TomatoType };
         }
     }
 }

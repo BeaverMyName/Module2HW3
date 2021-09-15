@@ -8,5 +8,11 @@ namespace Chef.Models.Vegetables.GroundVegetables
 {
     public abstract class LeaveVegetable : GroundVegetable
     {
+        public LeaveVegetable()
+        {
+            VegetableType = VegetableType.Vegetative;
+            GrowingDuration = GrowingDuration.TwoYear;
+            StarchSpecification = StarchSpecification.Green;
+        }
     }
 }

@@ -8,5 +8,10 @@ namespace Chef.Models.Vegetables.UndergroundVegetables
 {
     public abstract class TuberVegetable : UndergroundVegetable
     {
+        public TuberVegetable()
+        {
+            GrowingDuration = GrowingDuration.OneYear;
+            StarchSpecification = StarchSpecification.Starchy;
+        }
     }
 }

@@ -8,9 +8,11 @@ namespace Chef.Models.Vegetables.GroundVegetables
 {
     public class Cabbage : LeaveVegetable
     {
+        public CabbageType CabbageType { get; init; }
+
         public override object Clone()
         {
-            return new Cabbage() { Name = Name, Calories = Calories, Weight = Weight };
+            return new Cabbage() { Name = Name, Calories = Calories, Weight = Weight, CabbageType = CabbageType };
         }
     }
 }

@@ -8,5 +8,9 @@ namespace Chef.Models.Vegetables.UndergroundVegetables
 {
     public abstract class RootVegetable : UndergroundVegetable
     {
+        public RootVegetable()
+        {
+            StarchSpecification = StarchSpecification.Starchy;
+        }
     }
 }

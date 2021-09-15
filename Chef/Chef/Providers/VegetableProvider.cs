@@ -18,23 +18,20 @@ namespace Chef.Providers
         {
             _vegetables = new Vegetable[]
             {
-                new Tomato() { Name = "Vine tomato", Calories = 102, Weight = 123 },
-                new Tomato() { Name = "Cherry tomato", Calories = 51, Weight = 60 },
-                new Capsicum() { Name = "Yellow capsicum", Calories = 120, Weight = 90 },
+                new Tomato() { Name = "Black Krim tomato", Calories = 102, Weight = 123, TomatoType = TomatoType.BlackKrim },
+                new Tomato() { Name = "Cherry tomato", Calories = 51, Weight = 60, TomatoType = TomatoType.Cherry },
+                new Capsicum() { Name = "Bell capsicum", Calories = 120, Weight = 90, CapsicumType = CapsicumType.Bell },
                 new Spinach() { Name = "Baby spinach", Calories = 37, Weight = 75 },
-                new Peas() { Name = "Snow peas", Calories = 446, Weight = 145 },
-                new Cauliflower() { Name = "Broccoflower", Calories = 106, Weight = 134 },
-                new Cabbage() { Name = "Green cabbage", Calories = 97, Weight = 90 },
-                new Cabbage() { Name = "Red cabbage", Calories = 85, Weight = 75 },
-                new Broccoli() { Name = "Chinese broccoli", Calories = 127, Weight = 91 },
-                new Bean() { Name = "Butter beans", Calories = 194, Weight = 136 },
-                new Bean() { Name = "Snake beans", Calories = 170, Weight = 110 },
-                new Artichoke() { Name = "Globe artichoke", Calories = 122, Weight = 150 },
-                new Beetroot() { Name = "Beetroot", Calories = 179, Weight = 136 },
-                new Carrot() { Name = "Carrot", Calories = 200, Weight = 128 },
-                new Garlic() { Name = "Garlic", Calories = 23, Weight = 5 },
-                new Onion() { Name = "Red onion", Calories = 58, Weight = 45 },
-                new Potato() { Name = "Potato", Calories = 470, Weight = 150 }
+                new Cauliflower() { Name = "Yellow cauliflower", Calories = 106, Weight = 134, CauliflowerType = CauliflowerType.Yellow },
+                new Cabbage() { Name = "Green cabbage", Calories = 97, Weight = 90, CabbageType = CabbageType.Green },
+                new Cabbage() { Name = "Red cabbage", Calories = 85, Weight = 75, CabbageType = CabbageType.Red },
+                new Broccoli() { Name = "Broccoli", Calories = 127, Weight = 91 },
+                new Artichoke() { Name = "Artichoke", Calories = 122, Weight = 150 },
+                new Beetroot() { Name = "Beetroot", Calories = 179, Weight = 136, BeetrootType = BeetrootType.Classic },
+                new Carrot() { Name = "Imperator carrot", Calories = 200, Weight = 128, CarrotType = CarrotType.Imperator },
+                new Garlic() { Name = "Spring garlic", Calories = 23, Weight = 5, GarlicType = GarlicType.Spring },
+                new Onion() { Name = "Red onion", Calories = 58, Weight = 45, OnionType = OnionType.RedWing },
+                new Potato() { Name = "Dore potato", Calories = 470, Weight = 150, PotatoType = PotatoType.Dore }
             };
         }
 
